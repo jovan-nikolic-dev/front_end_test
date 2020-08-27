@@ -1,0 +1,236 @@
+/* VARIABLES */
+:root {
+	--clr-main: #f3ae3d;
+	--clr-text: #393e43;
+}
+
+/* GENERAL */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: .75px;
+}
+
+/* UTILITY */
+.container-medium {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.btn {
+	display: inline-block;
+	color: #393e43; /* IE */
+	color: var(--clr-text);
+	font-weight: 500;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-color: #393e43; /* IE */
+	border-color: var(--clr-text);
+	border-style: solid;
+	border-radius: 40px;
+	padding: 9px 45px;
+	transition: background-color .5s ease;
+}
+.btn:hover {
+	background-color: #e4e4e4;
+}
+.btn-dark {
+	background-color: #393e43; /* IE */
+	background-color: var(--clr-text);
+	color: #fff;
+}
+.btn-dark:hover {
+	background-color: #505459;
+}
+.btn-action {
+	letter-spacing: .1px;
+	padding: 9px 37px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+	font-size: 3rem;
+	line-height: 3.6rem;
+	font-weight: 700;
+	margin: 0 0 35px;
+	color: #393e43; /* IE */
+	color: var(--clr-text);
+	/*@media (max-width: $breakpoint-large) {
+		font-size: ;
+		line-height: ;
+	}
+	@media (max-width: $breakpoint-medium) {
+		font-size: ;
+		line-height: ;
+	}*/
+}
+
+ul {
+	list-style: circle;
+	list-style-position: inside;
+}
+li {
+	/*list-style-position: inside;*/
+}
+
+p, ul, ol, dl, table, hr, pre, blockquote {
+	margin: 0 0 25px;
+	line-height: 2rem;
+}
+
+a, 
+a:focus,
+a:hover, 
+a:active, 
+a:visited {
+	text-decoration: none;
+}
+
+section {
+	padding: 100px 0;
+}
+
+.site-header {
+	background-color: #f3ae3d; /* IE */
+	background-color: var(--clr-main);
+}
+.site-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.site-logo {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.site-header-action {
+	display: flex;
+  align-items: center;
+}
+.site-header-action-item {
+	margin-left: 40px;
+}
+.site-header-action-countdown {
+	font-size: 1rem;
+}
+.site-header-action-countdown .text,
+.site-header-action-countdown .time {
+	font-weight: 500;
+}
+.site-header-action-countdown .text {
+	text-transform: capitalize;
+}
+.site-header-action-countdown .time-number {
+	font-size: 1.2rem;
+}
+
+.showcase-wrapper {
+	display: flex;
+}
+.showcase-image {
+	width: 38%;
+}
+.showcase-image .product-image {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.product-image-wrapper {
+	position: relative;
+	margin-bottom: 40px;
+}
+.sticker {
+	position: absolute;
+	top: -25px;
+	left: 25px;
+	background-color: #393e43;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	width: 67px;
+	height: 67px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #393e43;
+}
+.product-price {
+	display: flex;
+}
+.product-price-old {
+	font-size: 1.6rem;
+	color: #666666;
+	width: 42%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 45px;
+}
+.product-price-old .line-through {
+	text-decoration: line-through;
+}
+.product-price-new {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #353a3f;
+	width: 58%;
+	padding-top: 12px;
+}
+.showcase-text {
+	width: 62%;
+	padding-left: 95px;
+}
+.showcase-text .list .list-item {
+	display: inline-block;
+	position: relative;
+	left: 45px;
+	padding-right: 45px;
+	margin-bottom: 30px;
+}
+.showcase-text .list .list-item .bullet-point {
+	position: absolute;
+	left: -45px;
+	top: 0;
+	font-size: 40px;
+  line-height: 16px;
+}
+.showcase-text .btn {
+	margin-right: 20px;
+}
+
+@media(max-width: 800px) {
+	section {
+		padding: 80px 0;
+	}
+	.showcase-wrapper {
+		flex-direction: column;
+	}
+	.showcase-image,
+	.showcase-text {
+		width: 100%;
+	}
+	.showcase-image {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.showcase-text {
+		padding-left: 30px;
+	}
+}
