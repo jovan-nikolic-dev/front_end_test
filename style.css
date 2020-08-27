@@ -234,3 +234,19 @@ section {
 		padding-left: 30px;
 	}
 }
+
+@media(max-width: 450px) {
+	.btn,
+	.btn-dark,
+	.btn-action {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	.showcase-text {
+		padding-left: 0px;
+	}
+}
+
+@media(max-width: 375px) {
+
+}
